@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body style="text-align: center;">
+    <h1>Result</h1>
+    <video width="800" height="600" controls>
+        <source src="{{ url_for('download_video') }}" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      
+    <br>
+
+    <button href="{{ url_for('download_video') }}" download > download</button>
+</body>
+</html>
